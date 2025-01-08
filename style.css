@@ -1,0 +1,130 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    @import url(Poppins);
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    background-color: #FAFAFA;
+    padding-block-end: 3rem;
+}
+
+header {
+    text-align: center;
+    margin-block: 4rem;
+}
+
+header h1 {
+    font-weight: 100;
+    color: #98979B;
+    font-size: clamp(1.8rem, 5vw, 2rem);
+}
+
+header span {
+    display: inline-block;
+    margin: 1% 0px;
+    font-weight: bold;
+    color: hsl(234, 12%, 34%);
+    font-size: clamp(1.8rem, 5vw, 2rem);
+}
+
+header p {
+    color: hsl(0deg 5.56% 69.98%);
+    font-size: clamp(1.2rem, 1vw, 2rem);
+    line-height: 1.5rem
+}
+
+.wraper {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    max-width: 1100px;
+    margin-inline: auto;
+    padding-inline: 2rem;
+}
+
+.wraper > * {
+    flex: 1;
+}
+.card {
+    background-color: #FFFFFF;
+    /* background-color: aqua; */
+    /* width: 22vw;
+    height: 33vh; */
+    display: flex;
+    flex-direction: column;
+    border-top: 0.25rem solid;
+    padding: 1.5rem;
+    -webkit-box-shadow: -11px 28px 33px -3px rgba(214, 203, 214, 1);
+    -moz-box-shadow: -11px 28px 33px -3px rgba(214, 203, 214, 1);
+    box-shadow: -11px 28px 33px -3px rgba(214, 203, 214, 1);
+}
+
+.card img {
+    margin-top: 1rem;
+    margin-left: auto;
+}
+
+.card p {
+    margin-top: 5%;
+    color: #C7C6C8;
+    font-size: clamp(1rem, 1vw, 3rem);
+    line-height: 1.8;
+}
+.card h2 {
+    color: #595B68;
+    /* font-size: 1rem; */
+    font-size: clamp(1.7rem, 1vw, 3rem);
+    font-weight: 600;
+
+}
+
+.col-1 .card {
+    border-color: #45D2D1;
+    border-radius: 10px;
+    margin-top: 110px;
+}
+
+.col-2 > :nth-child(1){
+    border-color: #E25A57;
+    border-radius: 10px;
+}
+.col-2 > :nth-child(2){
+    border-color: #FCAE4B;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.col-3 .card {
+    border-color: #559CEE;
+    border-radius: 10px;
+    margin-top: 110px;
+}
+
+@media screen and (max-width: 800px) {
+    .wraper {
+        flex-direction: column;
+    }
+    .card{
+        width: 80vw;
+        height: auto;
+    }
+    header {
+        text-align: left;
+        padding: 0% 10%;
+    }
+    .col-1 .card {
+        margin-top: 0%;
+    }
+    .col-3 .card {
+        margin-top: 0%;
+    }
+}
+
+
+
